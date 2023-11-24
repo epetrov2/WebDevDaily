@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic HTML/Tailwind starter</title>
+    <meta name="description" content="Subscribe Card" />
+    <meta name="author" content="epetrov2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div
+      class="flex items-center w-screen h-screen bg-[#F1E8E6] justify-center"
+    >
+      <section class="bg-white rounded-xl overflow-hidden w-[380px]">
+        <img
+          class="object-cover h-[200px] w-full object-[50%_79%]"
+          src="https://i0.wp.com/thesaladbowl.in/wp-content/uploads/2022/12/SALAD23-scaled.jpg"
+          alt="Salad plate"
+        />
+        <div class="flex flex-col mx-10 gap-2 w-5/6 items-center">
+          <p class="text-sm uppercase font-bold pt-7">Subscribe today</p>
+          <p class="text-2xl font-bold pt-3 font-extrabold">
+            Never miss a recipe
+          </p>
+          <input
+            type="email"
+            class="border-[#EDD2CB] border mt-4 pl-4 rounded-md text-lg w-full py-4 text-black"
+            placeholder="Your email adderss"
+          />
+          <button
+            type="button"
+            class="bg-[#F55951] border rounded-md border-[#EDD2CB] text-white py-4 text-xl font-bold w-full"
+          >
+            Subscribe
+          </button>
+          <p class="break-words text-center pt-4 pb-9">
+            We won’t send you spam. Unsubscribe at any time.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
