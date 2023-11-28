@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'mulish': ['Mulish', 'serif'],
+        'open-sans': ['"Open Sans"', 'sans-serif'],
+        'merriweather': ['Merriweather', 'serif'],
+      }
+    },
   },
   plugins: [],
 }
