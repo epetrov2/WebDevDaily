@@ -1,5 +1,4 @@
 .bg {
-  /*  flex h-screen justify-center items-center bg-[#A0B5B2] */
   background-color: #a0b5b2;
   height: 100vh;
   display: flex;
@@ -72,11 +71,11 @@
 }
 
 @media screen and (min-width: 400px) {
-    .review__text {
-        line-height: 2rem;
-        font-size: 1.5rem;
-      }
+  .review__text {
+    line-height: 2rem;
+    font-size: 1.5rem;
   }
+}
 
 .review__nav {
   display: flex;
