@@ -7,7 +7,8 @@ module.exports = {
         'mulish': ['Mulish', 'serif'],
         'open-sans': ['"Open Sans"', 'sans-serif'],
         'merriweather': ['Merriweather', 'serif'],
-        'montserrat': ['Montserrat', 'sans-serif']
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif']
       },
       fontSize: {
         '2xs': '0.6rem'
