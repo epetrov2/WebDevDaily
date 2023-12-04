@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* https://www.digitalocean.com/community/tutorials/css-minimal-css-reset */
+
+.bg {
+  background-color: #ede4c3;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.gift-popup {
+    width: 500px;
+    box-shadow: 0px 15px 7px -12px rgb(0 0 0 / 0.4);
+    border-radius: 0.75rem;
+    color: #D00257;
+    background-color: white;
+    overflow: hidden;
+}
+.gift-popup__picture {
+    object-fit: cover;
+    height: 260px;
+    width: 500px;
+}
+.gift-popup__content {
+    padding: 1rem 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 400;
+    font-size: 1rem;
+}
+.gift-poput__title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.gift-popup__text {
+    padding-top: 1rem;
+}
+.gift-popup__buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.gift-popup__button-cancel {
+    background-color: white;
+    color: #D00257;
+    border: 2px solid #D00257;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    width: 100%;
+    padding: 0.75rem;
+}
+.gift-popup__button-ok {
+    background-color: #D00257;
+    color: white;
+    border:  0;
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    width: 100%;
+    padding: 0.5rem;
+}
