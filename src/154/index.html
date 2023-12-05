@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Christmas Movie Checkout</title>
+    <meta name="description" content="Christmas Movie Checkout" />
+    <meta name="author" content="Viktor Lachkov" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="movie-checkout">
+        <img
+          class="movie-checkout__picture"
+          src="https://images.unsplash.com/photo-1636075203842-4248bae1b03a?q=80&w=480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <div class="movie-checkout__content">
+          <div class="movie-checkout__header">
+            <p class="movie__name movie-checkout__movie-name">Elf</p>
+            <p class="movie-checkout__movie-info">
+              PG | Comedy, Family, Holiday Theme | December 2nd, 2003
+            </p>
+          </div>
+          <div class="order movie-checkout__order">
+            <p class="order__header-label">Your order</p>
+            <div class="movie-checkout__order-cols">
+              <p class="order__movie-name-label">Movie</p>
+              <p class="movie__name order__movie-name">Elf</p>
+              <p class="order__movie-theater-label">Theater</p>
+              <p class="order__movie-theater">MJR THEATER</p>
+              <p class="order__movie-date-label">Date</p>
+              <p class="order__movie-date">12/02/23 - 09:00PM</p>
+              <p class="order__movie-room-label">Room</p>
+              <p class="order__movie-room">Screen 2</p>
+              <p class="order__movie-seat-label">Seat</p>
+              <p class="order__movie-seat">C5 - C6 - C7</p>
+              <p class="order__movie-total-label">Total</p>
+              <p class="order__movie-total">&dollar;24</p>
+            </div>
+          </div>
+          <div class="checkout">
+            <p class="checkout-header-label">Checkout</p>
+            <form class="checkout__form movie-checkout__form" action="#">
+              <input
+                class="checkout__name-input"
+                type="text"
+                id="name"
+                name="name"
+                value="Name on card"
+              />
+              <input
+                class="checkout__number-input"
+                type="text"
+                id="number"
+                name="number"
+                value="Card Number"
+              />
+              <div class="checkout__card-info">
+                <input
+                  class="checkout__month-input"
+                  type="text"
+                  id="month"
+                  name="month"
+                  value="Expire Month"
+                />
+                <input
+                  class="checkout__year-input"
+                  type="text"
+                  id="year"
+                  name="year"
+                  value="Expire Year"
+                />
+                <input
+                  class="checkout__cvc-input"
+                  type="text"
+                  id="cvc"
+                  name="cvc"
+                  value="CVC"
+                />
+              </div>
+              <input
+                class="checkout__button"
+                type="submit"
+                value="Make payment"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
