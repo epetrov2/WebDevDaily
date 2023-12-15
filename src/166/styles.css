@@ -1,0 +1,182 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* https://www.digitalocean.com/community/tutorials/css-minimal-css-reset */
+
+.bg {
+  background-color: #006ead;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.top-products {
+  background-color: #161616;
+  font-family: Roboto Mono, sans-serif;
+  font-weight: 400;
+  color: white;
+  border-radius: 0.6rem;
+  padding: 5.6rem 3.6rem;
+}
+
+.top-products__title {
+  font-size: 1.125rem;
+  margin-bottom: 0.9rem;
+}
+
+.top-products__container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.9rem;
+  margin-bottom: 2.25rem;
+}
+
+.top-products__card {
+  padding: 0.45rem 0.4rem 0.7rem;
+  border: 1px solid #282828;
+}
+
+.product-card__img {
+  width: 210px;
+  height: 165px;
+  position: relative;
+}
+
+.product-card__rating {
+    position: absolute;
+    box-shadow: 2px 2px 0px 0px #161616;
+    background-color: #26972a;
+    font-size: 0.5rem;
+    top: 0.4rem;
+    left: 0.4rem;
+    width: 1rem;
+    height: 1.4rem;
+    padding-top: 0.3rem;
+    padding-left: 0.25rem;
+    border: 1px solid #161616;
+}
+
+.product-card__favorite {
+    position: absolute;
+    box-shadow: 2px 2px 0px 0px #161616;
+    background-color: white;
+    color: #161616;
+    border: 1px solid #161616;
+    top: 0.4rem;
+    right: 0.4rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    line-height: 1.3rem;
+    padding-left: 0.15rem;
+    font-size: 1.5rem;
+    font-family: serif;
+}
+
+.product-card__favorite--active {
+    color: #bb2a2a;
+}
+
+.product-card__name {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.product-card__text {
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.product-card__footer {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-card__price {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.product-card__more {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.call-to-action {
+  padding: 0.9rem 1.6rem 0.9rem 1.9rem;
+  border: 1px solid #282828;
+  display: grid;
+  grid-template-rows: auto auto; /* key rule */
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "logo title button"
+    "logo text button";
+}
+
+.call-to-action__logo {
+  grid-area: logo;
+  align-self: center;
+  margin-right: 1.7rem;
+}
+
+.call-to-action__title {
+  grid-area: title;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+
+.call-to-action__text {
+  grid-area: text;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.call-to-action__button {
+  grid-area: button;
+  font-size: 0.8rem;
+  background-color: #26972a;
+  padding-left: 1.35rem;
+  padding-right: 1.35rem;
+  height: 2.4rem;
+  font-family: Roboto Mono, sans-serif;
+  font-weight: 400;
+  color: white;
+  border: none;
+  align-self: center;
+}
