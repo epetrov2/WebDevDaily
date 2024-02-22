@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* https://www.digitalocean.com/community/tutorials/css-minimal-css-reset */
+
+.bg {
+  background-color: #333536;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.notification {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 608px;
+  color: black;
+  font-family: Inter, sans-serif;
+  border-radius: 40px;
+  padding: 15px 42px 20px;
+}
+.notification__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 6px 5px 8px;
+}
+.notification__title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.notification__menu {
+  color: #D5D3DF;
+  font-size: 72px;
+  letter-spacing: -4px;
+  position: relative;
+  top: -40px;
+}
+.notification__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #F3F3F5;
+  padding: 18px 9px 25px;
+}
+.notification__item-name {
+  font-weight: 500;
+  font-size: 20px;
+}
+.notification__item-counter {
+  background-color: #EEF0F4;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 71px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
