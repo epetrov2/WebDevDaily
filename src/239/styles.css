@@ -1,0 +1,204 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* https://www.digitalocean.com/community/tutorials/css-minimal-css-reset */
+
+:root {
+  --font-family: "Inter", sans-serif;
+}
+
+.bg {
+  background-color: #e3a1a0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.qqqqq {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 608px;
+  color: black;
+  font-family: Inter, sans-serif;
+  border-radius: 40px;
+  padding: 15px 42px 20px;
+}
+
+.payment-methods {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  border-radius: 1.25rem;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1.38rem;
+  color: #000;
+  padding: 35px 32px 32px;
+}
+.payment-methods__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.payment-methods__title {
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: 0.02em;
+}
+.payment-methods__edit {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #586ef2;
+}
+.card-info {
+  border: 1px solid #F3F5F7;
+  border-radius: 22px;
+  padding: 23px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "card digits"
+    "card date";
+  margin-bottom: 19px;
+}
+.card {
+  grid-area: card;
+  background-color: #000;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  width: 7.06em;
+  height: 4.81em;
+  position: relative;
+  margin-right: 22px;
+}
+.card--visa {
+  background-color: #4b6ffe;
+  color: #fff;
+}
+.card__bank {
+  color: #fff;
+  font-size: 0.44rem;
+  letter-spacing: -0.01rem;
+  position: absolute;
+  left: 0.625rem;
+  top: 0.69rem;
+}
+.card__currecny {
+  color: #fff;
+  font-size: 0.44rem;
+  position: absolute;
+  right: 0.69rem;
+  top: 0.69rem;
+}
+.card__chip {
+  background-color: #ebf2fb;
+  border-radius: 0.25rem;
+  width: 1.12rem;
+  height: 1rem;
+  position: absolute;
+  left: 0.625rem;
+  top: 1.625rem;
+}
+.card__digits {
+  color: #fff;
+  font-size: 0.44rem;
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+}
+.card__logo {
+  position: absolute;
+  right: 0.69rem;
+  bottom: 0.625rem;
+}
+.card__logo-yc {
+  border-radius: 0.88rem;
+  width: 0.88rem;
+  height: 0.88rem;
+  background: #fcb733;
+  position: absolute;
+  right: 0.438rem;
+  bottom: 0;
+  z-index: 1;
+}
+.card__logo-rc {
+  border-radius: 0.88rem;
+  width: 0.88rem;
+  height: 0.88rem;
+  background: #ff5e5e;
+  position: relative;
+  z-index: 2;
+}
+.card__logo-visa {
+  width: 2.12rem;
+  height: 0.75rem;
+  margin-bottom: 0.125rem;
+}
+
+.card-info__payment-service {
+  grid-area: digits;
+  padding-top: 6px;
+}
+.card-info__digits {
+  font-size: 20px;
+}
+.card-info__expdate-label {
+  grid-area: date;
+  padding-top: 9px;
+  letter-spacing: -0.01em;
+  color: #3a444e;
+}
+.card-info__expdate {
+  font-size: 20px;
+  color: #000;
+}
+.payment-methods__show-more {
+  margin-top: 9px;
+  border: none;
+  width: 100%;
+  height: 62px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 19px;
+  color: #fff;
+  background-color: #4B6FFE;
+  border-radius: 12px;
+}
