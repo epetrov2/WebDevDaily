@@ -1,0 +1,123 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* https://www.digitalocean.com/community/tutorials/css-minimal-css-reset */
+
+:root {
+  --font-family: Heebo, sans-serif;
+}
+
+.bg {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #CCC3FA;
+}
+.metrics {
+  font-family: var(--font-family);
+  background-color: #fff;
+  color: #000;
+  max-width: 1152px;
+  padding: 73px 144px 96px;
+}
+.metrics__header {
+  display: flex;
+  justify-content: space-between;
+}
+.metrics__text-area {
+  width: 45%;
+}
+.metrics__title {
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+}
+.metrics__text {
+  font-size: 0.81rem;
+  letter-spacing: -0.01em;
+}
+.metrics__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 22px;
+}
+.metrics__button {
+  border-radius: 7px;
+  width: 137px;
+  height: 42px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metrics__more {
+  border: 2px solid #000;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.metrics__join {
+  border: none;
+  background-color: #7b62ff;
+  color: #fff;
+}
+.metrics__numbers {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.metrics__number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.metrics__value {
+  font-size: 56px;
+  letter-spacing: -0.02em;
+  color: #7b62ff;
+  line-height: 56px;
+}
+.metrics__value-label {
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: #5e5e5e;
+}

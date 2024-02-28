@@ -48,17 +48,6 @@ img {
   padding: 1rem;
 }
 
-.qqqqq {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  width: 608px;
-  color: black;
-  font-family: Inter, sans-serif;
-  border-radius: 40px;
-  padding: 15px 42px 20px;
-}
-
 .payment-methods {
   background-color: #fff;
   display: flex;
