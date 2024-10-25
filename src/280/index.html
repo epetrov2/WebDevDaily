@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PhotoShare</title>
+    <meta name="description" content="PhotoShare" />
+    <meta name="author" content="Viktor Lachkov" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="root">
+        <div class="header">
+          <button class="button button__capture"></button>
+          <div class="divider"></div>
+          <p class="header__label-program">PhotoShare</p>
+          <div class="header__live">
+            <div class="header__live-on-air"></div>
+            <button class="button button__live"></button>
+          </div>
+          <button class="button button__post"></button>
+        </div>
+        <div class="stories-line">
+          <div class="story-author">
+            <div class="story-author__circle">
+              <img class="story-author__icon" src="https://i.pravatar.cc/56?1">
+            </div>
+            <p class="story-author__user">Your Story</p>
+          </div>
+          <div class="story-author">
+            <div class="story-author__circle story-author__circle--live">
+              <div class="story-author__live-box">LIVE</div>
+              <img class="story-author__icon" src="https://i.pravatar.cc/56?2">
+            </div>
+            <p class="story-author__user">karennne</p>
+          </div>
+          <div class="story-author">
+            <div class="story-author__circle">
+              <img class="story-author__icon" src="https://i.pravatar.cc/56?3">
+            </div>
+            <p class="story-author__user">zackjohn</p>
+          </div>
+          <div class="story-author">
+            <div class="story-author__circle">
+              <img class="story-author__icon" src="https://i.pravatar.cc/56?4">
+            </div>
+            <p class="story-author__user">kieron_d</p>
+          </div>
+          <div class="story-author">
+            <div class="story-author__circle">
+              <img class="story-author__icon" src="https://i.pravatar.cc/56?7">
+            </div>
+            <p class="story-author__user">craig_love</p>
+          </div>
+        </div>
+        <div class="feed">
+          <div class="post">
+            <div class="post-header">
+              <img src="https://i.pravatar.cc/32?5" alt="" class="post-header__icon" />
+              <div class="post-header__metadata">
+                <p class="post-header__user">
+                  joshua_l<span class="post-header__verified"></span>
+                </p>
+                <p class="post-header__geo">Tokyo, Japan</p>
+              </div>
+              <div class="post-header__more"></div>
+            </div>
+            <div class="carousel">
+              <div class="carousel__counter">1/3</div>
+              <img src="https://loremflickr.com/375/375/architect" alt="" class="carousel__image" />
+            </div>
+            <div class="post__controls">
+              <button class="button button__like" type="button"></button>
+              <button class="button button__comment" type="button"></button>
+              <button class="button button__post"></button>
+              <div class="divider"></div>
+              <div class="carousel-dots">
+                <div
+                  class="carousel-dots__dot carousel-dots__dot--active"
+                ></div>
+                <div class="carousel-dots__dot"></div>
+                <div class="carousel-dots__dot"></div>
+              </div>
+              <button class="button button__bookmark post__controls"></button>
+            </div>
+            <div class="post-likes">
+              <img src="https://i.pravatar.cc/18?6" alt="" class="post-likes__icon" />
+              Liked by&nbsp;
+              <span class="post-likes__user">craig_love</span>
+              &nbsp;and&nbsp;
+              <span class="post-likes__count">44,686</span>
+              <span class="post-likes_label-others">&nbsp;others</span>
+            </div>
+            <div class="post-text">
+              <span class="post-text__author">joshua_l</span>
+              The game in Japan was amazing and I want to share some photos
+            </div>
+            <div class="post__date">October 21, 2024</div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer__controls">
+            <button class="button__home"></button>
+            <button class="button__search"></button>
+            <button class="button__create"></button>
+            <button class="button__like"></button>
+            <img src="https://i.pravatar.cc/24?1" class="button__profile"/>
+          </div>
+          <div class="footer__underline"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
